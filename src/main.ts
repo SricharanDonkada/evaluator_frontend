@@ -4,7 +4,12 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
-if (environment.production) {
+import 'codemirror/mode/clike/clike';
+import 'codemirror/mode/python/python';
+import 'codemirror/addon/display/fullscreen';
+import 'codemirror/addon/edit/closebrackets';
+
+if (environment.production) { 
   enableProdMode();
 }
 

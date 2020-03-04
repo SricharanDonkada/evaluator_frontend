@@ -1,0 +1,12 @@
+<div class="master-container">
+    <mat-sidenav-container class="example-container">
+        <mat-sidenav #sidenav mode="side">
+            <button mat-button class="list-item">testing</button>
+        </mat-sidenav>
+
+        <mat-sidenav-content>
+            <button class="expand-icon" mat-button (click)="sidenav.toggle();isPanelExpanded = !isPanelExpanded"> <img [class.panel-collapse]="true" src="assets/images/expand.png" alt="expand icon"> </button>
+            <app-code-area></app-code-area>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</div>

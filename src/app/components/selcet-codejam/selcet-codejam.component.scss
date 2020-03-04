@@ -1,0 +1,36 @@
+.master-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.card {
+    height: 200px;
+    width: 400px;
+    -webkit-box-shadow: 0px 0px 16px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 16px -9px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 16px -9px rgba(0, 0, 0, 0.75);
+    transform: translateY(-50px);
+    padding: 40px;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+}
+
+.form-field-container {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.submit-button-container {
+    display: flex;
+    justify-content: center;
+}

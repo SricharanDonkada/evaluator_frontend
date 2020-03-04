@@ -1,0 +1,36 @@
+<div class="main-container">
+    <form [formGroup]="codeForm">
+        <div class="question-button-container">
+            <button type="button" mat-raised-button (click)="showQuestion()">Show question</button>
+            <mat-form-field>
+                <mat-label>Language</mat-label>
+                <mat-select formControlName="language">
+                    <mat-option *ngFor="let language of languages" [value]="language.value">
+                        {{language.name}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div class="codemirror-container">
+            <ngx-codemirror formControlName="code" [options]="codemirrorConfig"></ngx-codemirror>
+        </div>
+
+        <div class="testcases-container">
+            <div class="header">
+                Test cases:
+            </div>
+            <div class="testcases-cards-container">
+                <pre class="testcase-card">Status     :
+
+Input      :
+
+Output     :
+
+Your Output:
+                    testing{{test}}
+                </pre>
+            </div>
+        </div>
+    </form>
+</div>

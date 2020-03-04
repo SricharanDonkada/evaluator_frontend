@@ -1,0 +1,45 @@
+.master-container {
+    // height: 100vh;
+    width: 100vw;
+}
+
+mat-sidenav {
+    width: 25vw;
+    max-width: 500px;
+    height: 100vh;
+    position: fixed;
+}
+
+mat-sidenav-content {
+    // height: 100vh;
+    overflow-x: hidden;
+    width: 100vw;
+    padding: 30px;
+}
+
+.expand-icon {
+    position: fixed;
+    padding: 0;
+    width: 20px;
+    z-index: 5;
+    img {
+        width: 20px;
+        transition: 0.5s;
+    }
+    transform: translateX(-30px);
+}
+
+fixed .panel-collapse {
+    transform: rotateZ(-180deg);
+}
+
+.list-item {
+    width: 100%;
+    height: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    mat-sidenav {
+        width: 40vw;
+    }
+}

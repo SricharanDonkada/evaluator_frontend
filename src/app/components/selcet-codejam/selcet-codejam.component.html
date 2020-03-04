@@ -1,0 +1,17 @@
+<div class="master-container">
+    <div class="card">
+        <div class="header">Join Codejam</div>
+        <div class="form-field-container">
+            <form [formGroup]="codejamIdForm">
+                <mat-form-field appearance="outline">
+                    <mat-label>Codejam ID</mat-label>
+                    <input matInput autocomplete="off" formControlName="id" placeholder="Enter codejam ID">
+                    <mat-error *ngIf="!codejamIdForm.get('id').valid">{{getIdErrorMessage()}}</mat-error>
+                </mat-form-field>
+            </form>
+        </div>
+        <div class="submit-button-container">
+            <button mat-raised-button (click)="joinCodejam()" [disabled]="codejamIdForm.invalid">Join</button>
+        </div>
+    </div>
+</div>
